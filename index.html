@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">School Survey</h1>
+            <p id="description">A survey for school students.</p>
+            <form id="survey-form" action="#">
+                <div id="table">
+                    <div id="div">
+                        <div class="label">
+                            <label for="name" id="name-label">*Name:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="name" required placeholder="Name"/>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="email" id="email-label">*Email:</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" id="email" required placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="number" id="number-label">*Age:</label>
+                        </div>
+                        <div class="input">
+                            <input type="number" id="number" min="3" max="20" required placeholder="Age"/>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="gender">Gender:</label>
+                        </div>
+                        <div class="input">
+                            <ul style="list-style: none; text-align: left;">
+                                <li>
+                                    <input type="radio" name="gender" value="male"/>
+                                    <label for="male">Male</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender" value="female"/>
+                                    <label for="female">Female</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="dropdown">Class:</label>
+                        </div>
+                        <div class="input">
+                            <select id="dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="fav-sub">Favorite Subject:</label>
+                        </div>
+                        <div class="input">
+                            <ul style="list-style: none;">
+                                <li>
+                                    <input type="checkbox" value="english"/>
+                                    <label for="english">English</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="maths"/>
+                                    <label for="english">Mathematics</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="science"/>
+                                    <label for="english">Science</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="social"/>
+                                    <label for="english">Social</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="div">
+                        <div class="label">
+                            <label for="comments">Additional Information:</label>
+                        </div>
+                        <div class="input">
+                            <textarea cols="50" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div id="submit-div">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
